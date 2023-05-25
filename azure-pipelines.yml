@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name: 'Azure Pipelines'
+  name: 'Newpipeline'
 
 steps:
 - script: echo Hello, world!
