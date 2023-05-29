@@ -1,3 +1,4 @@
+
 # Starter pipeline
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
@@ -22,6 +23,7 @@ steps:
     searchFolder: '$(System.DefaultWorkingDirectory)'
     codeCoverageEnabled: true
 - script: |
+    docker build -t app:latest .
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
