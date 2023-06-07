@@ -8,7 +8,7 @@ trigger:
 - main
 
 pool:
-  name: 'Akspipeline'
+  name: 'Newpool'
 
 steps:
 - script: echo Hello, world!
