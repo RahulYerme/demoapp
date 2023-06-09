@@ -6,8 +6,8 @@
 trigger:
 - main
 
-pool:
-  name: 'Newpool'
+#pool:
+#  name: 'Newpool'
 
 steps:
 - script: echo Hello, world!
