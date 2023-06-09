@@ -4,6 +4,8 @@
 
 trigger:
 - main
+pool:
+name: Newpool
 
 resources:
 - repo: self
@@ -18,8 +20,7 @@ variables:
 
   # Agent VM image name
 #  vmImageName: 'Newpool'
-pool:
-  name: 'Newpool'
+
 
 stages:
 - stage: Build
