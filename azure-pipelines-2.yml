@@ -5,8 +5,7 @@
 trigger:
 - main
 
-pool:
-  name: 'Newpool'
+
 
 resources:
 - repo: self
@@ -20,7 +19,7 @@ variables:
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
-#  vmImageName: 'Newpool'
+  vmImageName: 'Newpool'
 
 
 stages:
