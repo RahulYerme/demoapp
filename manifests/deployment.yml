@@ -16,7 +16,7 @@ spec:
       containers:
       - name: sampleapp
         #replace <foobar> with your container registry. Example: contosodemo.azurecr.io
-        image: nodecontainer.azurecr.io
+        image: nodecontainer.azurecr.io/akspipeline:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
