@@ -8,7 +8,7 @@ trigger:
 resources:
 - repo: self
 pool:
-  name: 'Newpipeline'
+  name: 'Newpool'
 
 variables:
 
@@ -31,7 +31,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      vmImage: $(vmImageName)
+      name: 'Newpool'
     steps:
     - task: Docker@2
       displayName: Build and push an image to container registry
@@ -54,7 +54,7 @@ stages:
   - deployment: Deploy
     displayName: Deploy
     pool:
-      vmImage: $(vmImageName)
+      name: 'Newpool'
     environment: 'AKSPipeline-3078.nodespace'
     strategy:
       runOnce:
