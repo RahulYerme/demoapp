@@ -9,7 +9,7 @@ spec:
     app: sampleapp
   type: NodePort 
   ports:
-  - nodePort: 32410
+  - NodePort: 32410
     port: 8000
     protocol: TCP
     targetPort: 8000
