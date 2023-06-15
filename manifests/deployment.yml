@@ -19,5 +19,5 @@ spec:
         image: nodecontainer.azurecr.io/akspipeline:latest
         imagePullPolicy: Always
         ports:
-        - containerPort: 8000
+        - containerPort: 8080
         
