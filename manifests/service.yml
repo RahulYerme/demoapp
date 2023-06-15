@@ -6,10 +6,10 @@ metadata:
     app: sampleapp
 spec:
   selector:
-    app: sampleapp
-  type: NodePort
+    app: sampleapp 
   ports:
-  - nodePort: 32410
+  - name: NodePort
+    nodePort: 32410
     port: 8000
     protocol: TCP
     targetPort: 8000
